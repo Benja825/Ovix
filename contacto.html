@@ -5,96 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Contacto - Papas Delicias</title>
   <link rel="stylesheet" href="style.css">
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');
-
-    body {
-      font-family: 'Raleway', sans-serif;
-      background: #fefae0;
-      margin: 0;
-      padding: 0;
-      color: #333;
-    }
-
-    header {
-      background: linear-gradient(90deg, #f4a261, #e76f51);
-      padding: 1.5rem;
-      text-align: center;
-      color: white;
-    }
-
-    .container {
-      max-width: 800px;
-      margin: 2rem auto;
-      background: white;
-      padding: 2rem;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
-
-    h2 {
-      color: #e76f51;
-      margin-bottom: 1rem;
-    }
-
-    p.description {
-      color: #555;
-      margin-bottom: 2rem;
-    }
-
-    form {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1rem;
-    }
-
-    form.full-width {
-      grid-column: span 2;
-    }
-
-    label {
-      display: block;
-      margin-bottom: 0.5rem;
-      font-weight: bold;
-    }
-
-    input, select, textarea {
-      width: 100%;
-      padding: 0.75rem;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      box-sizing: border-box;
-    }
-
-    textarea {
-      resize: vertical;
-      min-height: 120px;
-    }
-
-    button {
-      grid-column: span 2;
-      padding: 1rem;
-      background: #f4a261;
-      color: white;
-      border: none;
-      font-weight: bold;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    button:hover {
-      background: #e76f51;
-    }
-
-    footer {
-      text-align: center;
-      padding: 1rem;
-      background-color: #e76f51;
-      color: white;
-      margin-top: 3rem;
-    }
-  </style>
+  <link rel="stylesheet" href="contacto.css">
 </head>
 <body>
   <header>
@@ -103,7 +14,7 @@
 
   <div class="container">
     <h2>¿Tienes alguna consulta o sugerencia?</h2>
-    <p class="description">En Papas Delicias, valoramos tu opinión. Si tienes preguntas, comentarios o simplemente quieres decir hola, por favor completa el siguiente formulario y nuestro equipo se pondrá en contacto contigo lo antes posible.</p>
+    <p class="description">En Ovix, valoramos tu opinión. Si tienes preguntas, comentarios o simplemente quieres decir hola, por favor completa el siguiente formulario y nuestro equipo se pondrá en contacto contigo lo antes posible.</p>
     <form action="#" method="post">
       <div>
         <label for="nombre">Nombre completo</label>
@@ -118,7 +29,7 @@
       <div>
         <label for="pais">País</label>
         <select id="pais" name="pais" required>
-          <option value="">Selecciona tu país</option>
+          <option value="" disabled selected hidden>Selecciona tu país</option>
           <option value="argentina">Argentina</option>
           <option value="chile">Chile</option>
           <option value="mexico">México</option>
@@ -130,7 +41,7 @@
       <div>
         <label for="motivo">Motivo del contacto</label>
         <select id="motivo" name="motivo" required>
-          <option value="">Selecciona una opción</option>
+          <option value="" disabled selected hidden>Selecciona una opción</option>
           <option value="comentario">Comentario</option>
           <option value="reclamo">Reclamo</option>
           <option value="sugerencia">Sugerencia</option>
@@ -148,7 +59,7 @@
   </div>
 
   <footer>
-    &copy; 2025 Papas Delicias. Todos los derechos reservados.
+    &copy; 2025 Ovix. Todos los derechos reservados.
   </footer>
 </body>
 </html>
