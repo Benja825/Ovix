@@ -160,7 +160,7 @@ body {
   
   .bounce-in {
     animation: bounceIn 1.5s ease-in-out forwards;
-    opacity: 0;
+    opacity: 1 !important;
   }
   
   .zoom-in {
@@ -226,27 +226,31 @@ body {
   }
   
   .subscribe {
-    padding: 60px 20px;
-    background: #ffe4d4;
-    text-align: center;
-  }
-  
-  .subscribe input {
-    padding: 12px;
-    width: 250px;
-    margin-right: 10px;
-    border-radius: 25px;
-    border: none;
-  }
-  
-  .subscribe button {
-    padding: 12px 20px;
-    background: #ff6b3d;
-    color: white;
-    border: none;
-    border-radius: 25px;
-    cursor: pointer;
-  }
+  padding: 60px 20px;
+  background: #fff; /* más contraste */
+  text-align: center;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.2); /* sombra para resaltar */
+  margin-top: 50px;
+  border-radius: 20px;
+}
+
+.subscribe input {
+  background: #fff;
+  border: 2px solid #ffa05d;
+  color: #333;
+}
+
+.subscribe button {
+  background: #ffa05d;
+  color: white;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.subscribe button:hover {
+  background: #ff6b3d;
+}
+
   
   .timeline {
     padding: 60px 20px;
